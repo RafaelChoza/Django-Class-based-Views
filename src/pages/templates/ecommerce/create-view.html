@@ -1,0 +1,13 @@
+{% include "ecommerce/messages.html" %}
+
+<h1>
+    Crear un nuevo Producto
+</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Crear">
+</form>
+
+<a href="/ecommerce">Ir a lista de Productos</a>

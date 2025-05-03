@@ -1,0 +1,240 @@
+[
+{
+    "model": "ecommerce.productmodel",
+    "pk": 1,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "laptop",
+        "price": 19999.99,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 3,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "Audifonos",
+        "price": 2000.0,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 4,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "Silla Gamer",
+        "price": 8000.0,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 5,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "Escritorio con altura Ajustable",
+        "price": 10000.0,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 7,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "Laptop Gamer",
+        "price": 30000.0,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 8,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:10:17.549Z",
+        "updated": "2025-03-17T01:10:17.552Z",
+        "publish_timestamp": null,
+        "title": "Laptop Mac",
+        "price": 15000.0,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 11,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product1",
+        "price": 199.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 12,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product2",
+        "price": 299.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 13,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product3",
+        "price": 399.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 14,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product4",
+        "price": 499.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 15,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product5",
+        "price": 599.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 16,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product6",
+        "price": 699.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 17,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product7",
+        "price": 799.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 18,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T01:38:45.408Z",
+        "updated": "2025-03-17T01:38:45.408Z",
+        "publish_timestamp": null,
+        "title": "Product8",
+        "price": 899.9,
+        "description": null,
+        "slug": null
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 20,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T17:37:37.020Z",
+        "updated": "2025-03-17T17:37:37.020Z",
+        "publish_timestamp": null,
+        "title": "Producto test slug",
+        "price": 199.99,
+        "description": null,
+        "slug": "producto-test-slug"
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 21,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T17:44:16.388Z",
+        "updated": "2025-03-17T17:44:16.389Z",
+        "publish_timestamp": null,
+        "title": "Producto test slug",
+        "price": 199.99,
+        "description": null,
+        "slug": "producto-test-slug-1"
+    }
+},
+{
+    "model": "ecommerce.productmodel",
+    "pk": 22,
+    "fields": {
+        "state": "BR",
+        "timestamp": "2025-03-17T17:44:34.849Z",
+        "updated": "2025-03-17T17:44:34.849Z",
+        "publish_timestamp": null,
+        "title": "Producto test slug",
+        "price": 199.99,
+        "description": null,
+        "slug": "producto-test-slug-2"
+    }
+}
+]

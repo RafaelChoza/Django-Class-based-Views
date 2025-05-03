@@ -29,9 +29,14 @@ TESTING = "test" in sys.argv
 allowed_hosts = os.getenv("ALLOWED_HOSTS", ".localhost,127.0.0.1,[::1]")
 ALLOWED_HOSTS = list(map(str.strip, allowed_hosts.split(",")))
 
+LOGIN_URL = "/admin/login/"
+
 # Application definitions
 INSTALLED_APPS = [
     "pages.apps.PagesConfig",
+    "ecommerce.apps.EcommerceConfig",
+    "products.apps.ProductsConfig",
+    "base.apps.BaseConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
