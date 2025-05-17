@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     "ecommerce.apps.EcommerceConfig",
     "forms_test.apps.FormsTestConfig", 
     "test_templates.apps.TestTemplatesConfig",
-    "api.apps.ApiConfig", # <-------
+    "api.apps.ApiConfig",
+    "rest_examples.apps.RestExamplesConfig",
+    "rest_framework", # <---------
     "products.apps.ProductsConfig",
     "base.apps.BaseConfig",
     "django.contrib.admin",
