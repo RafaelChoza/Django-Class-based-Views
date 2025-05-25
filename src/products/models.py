@@ -7,6 +7,7 @@ class Product(models.Model):
     user = models.ForeignKey(User, blank=True, null=True, on_delete=models.SET_NULL)
     title = models.CharField(max_length=120)
     slug = models.SlugField(unique=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
         return f"/products/products/{self.slug}"

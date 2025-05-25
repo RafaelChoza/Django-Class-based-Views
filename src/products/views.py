@@ -12,29 +12,13 @@ from django.views.generic import (
     DeleteView,
     )
 from django.shortcuts import render, get_object_or_404
+from rest_framework import generics
+from .pagination import ProductPagination, ProductLOPagination, ProductCPagination
+from .serializers import ProductSerializer
 
 from .mixins import TemplateTitleMixin
 from .models import Product, DigitalProduct
 from .forms import ProductModelForm
-
-# def about_us_redirect_view(request):
-#     return HttpResponseRedirect("/about/")
-
-# def about_us_view(request):
-#     return render(request, "about.html", {})
-
-# class AboutUsView(View):
-#     def get(self, request):
-#         return render(request, "about.html", {})
-
-# class AboutUsView(TemplateView):
-#     template_name = "about.html"
-
-# class AboutUsView(TemplateView):
-#     template_name = "bout.html"
-
-# class AboutUsViewRedirectView(RedirectView):
-#     url = "/product/about/"
 
 class ProductListView(TemplateTitleMixin, ListView):
     # app_label = "product"
@@ -115,3 +99,8 @@ class ProtectedProductDeleteView(LoginRequiredMixin, DeleteView):
             context = super().get_context_data(**kwargs)
             context["title"] = "Mis Productos"
             return context
+        
+class ProductApiListView(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    pagination_class = ProductCPagination

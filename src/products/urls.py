@@ -12,8 +12,8 @@ from products.views import(
     ProtectedProductCreateView,
     ProtectedProductUpdateView,
     ProtectedProductDeleteView,
+    ProductApiListView
     )
-
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -21,6 +21,7 @@ urlpatterns = [
     path("about/", TemplateView.as_view(template_name = "products/about.html")),
     path("team/", TemplateView.as_view(template_name = "products/team.html")),
     path("products/", ProductListView.as_view(template_name = "products/product_list.html")),
+    path("products-api/", ProductApiListView.as_view()),
     path("products/<int:pk>", ProductDetailView.as_view(template_name = "products/product_detail.html")),
     path("digital-products/", DigitalProductListView.as_view(template_name = "products/product_list.html")),
     path("products/<slug:slug>/", ProductDetailView.as_view()),

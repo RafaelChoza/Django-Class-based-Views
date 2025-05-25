@@ -3,9 +3,12 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.viewsets import ViewSet
 from django.shortcuts import get_object_or_404
+from rest_framework import generics
 
 from .serializers import TestSerializer, ProductSerializer
 from .models import Product
+from .serializers import ProductSerializer
+from .pagination import ProductPagination
 
 class TestAPIView(APIView):
     """APIView de Prueba"""
@@ -125,3 +128,8 @@ class ProductViewSet(ViewSet):
         product = get_object_or_404(Product, pk=pk)
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+class ProductListViewPaginated(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    pagination_class = ProductPagination
