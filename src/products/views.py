@@ -13,6 +13,7 @@ from django.views.generic import (
     )
 from django.shortcuts import render, get_object_or_404
 from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
 from .pagination import ProductPagination, ProductLOPagination, ProductCPagination
 from .serializers import ProductSerializer
 
@@ -104,3 +105,6 @@ class ProductApiListView(generics.ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     pagination_class = ProductCPagination
+    permission_classes = [
+        IsAuthenticated
+    ]

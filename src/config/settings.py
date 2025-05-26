@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     "api.apps.ApiConfig",
     "rest_examples.apps.RestExamplesConfig",
     "rest_framework", # <---------
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
+    "rest_framework.authtoken",
+    "user_app.apps.UserAppConfig",
     "products.apps.ProductsConfig",
     "base.apps.BaseConfig",
     "django.contrib.admin",
@@ -179,9 +183,18 @@ if DEBUG:
         "10.0.2.2",
     ]
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_RENDERER_CLASSES': [
-#         'rest_framework.renderers.JSONRenderer',
-#         #'rest_framework.renderers.BrowsableAPIRenderer',
-#     ]
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        #'rest_framework.authentication.BasicAuthentication',
+        #'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
+    ]
+}
+
+SIMPLE_JWT = {
+    "ROTATE_REFRESH_TOKENS":True
+}
